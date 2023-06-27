@@ -1,0 +1,6 @@
+# Ignore below files
+
+Langchain/.chroma
+*.pyc
+*.DS_Store
+config.py

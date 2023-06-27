@@ -1,0 +1,226 @@
+<app-navbar></app-navbar>
+<div class="content">
+  <div class="main">
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <div class="form-group">
+          <label for="sel1">State</label>
+          <ng-select
+            class="state-licence-dropdown"
+            [items]="us_state_list"
+            bindLabel="abbreviation"
+            bindValue="abbreviation"
+            [(ngModel)]="state"
+            (change)="filterStateRequiredCourses()"
+            maxlength="60"
+          >
+          </ng-select>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <div class="form-group">
+          <label for="sel1">Applies To</label>
+          <ng-select
+            class="state-licence-dropdown"
+            [items]="roles"
+            bindLabel="item"
+            bindValue="item"
+            [(ngModel)]="appliesTo"
+            (change)="filterStateRequiredCourses()"
+            maxlength="60"
+          >
+          </ng-select>
+        </div>
+      </div>
+    </div>
+
+    <div class="ritz grid-container" dir="ltr">
+      <table class="waffle no-grid" id="state-requirement" cellspacing="0" cellpadding="0">
+        <tbody>
+          <tr style="height: 49px">
+            <th
+              id="22770290R1"
+              style="height: 49px"
+              class="row-headers-background"
+            >
+              <div class="row-header-wrapper" style="line-height: 49px">2</div>
+            </th>
+            <td class="s0" dir="ltr"></td>
+            <td class="s3" dir="ltr" colspan="6">
+              Browse State Required Courses
+            </td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+          </tr>
+          <tr style="height: 20px">
+            <th
+              id="22770290R2"
+              style="height: 20px"
+              class="row-headers-background"
+            >
+              <div class="row-header-wrapper" style="line-height: 20px">3</div>
+            </th>
+            <td class="s0" dir="ltr"></td>
+            <td class="s4" dir="ltr" colspan="6">
+              When possible, we&#39;ve provided a few options for each
+              requirement displayed in the topics.<br />Please note that any
+              state that does not have courses populated does not require
+              education on a specific topic to maintain a license.<br />Check
+              out additional courses in the Learning Center!
+            </td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+          </tr>
+          <tr style="height: 9px">
+            <th
+              id="22770290R3"
+              style="height: 9px"
+              class="row-headers-background"
+            >
+              <div class="row-header-wrapper" style="line-height: 9px">4</div>
+            </th>
+            <td class="s0" dir="ltr"></td>
+            <td class="s5" dir="ltr"></td>
+            <td class="s6" dir="ltr"></td>
+            <td class="s6" dir="ltr"></td>
+            <td class="s6" dir="ltr"></td>
+            <td class="s5" dir="ltr"></td>
+            <td class="s5" dir="ltr"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+          </tr>
+          <tr style="height: 59px">
+            <th
+              id="22770290R4"
+              style="height: 59px"
+              class="row-headers-background"
+            >
+              <div class="row-header-wrapper" style="line-height: 59px">5</div>
+            </th>
+            <td class="s1" dir="ltr"></td>
+            <td class="s7">State</td>
+            <td class="s7" style="min-width: 115px;" dir="ltr">Applies To</td>
+            <td class="s7">Topic</td>
+            <td class="s7">Title</td>
+            <td class="s7">Credits</td>
+            <td class="s7">Price</td>
+            <td class="s1"></td>
+            <td class="s1"></td>
+            <td class="s1"></td>
+            <td class="s1"></td>
+            <td class="s1"></td>
+            <td class="s1"></td>
+            <td class="s1"></td>
+            <td class="s1"></td>
+            <td class="s1"></td>
+            <td class="s1"></td>
+            <td class="s1"></td>
+            <td class="s1"></td>
+            <td class="s1"></td>
+            <td class="s1"></td>
+            <td class="s1"></td>
+            <td class="s1"></td>
+            <td class="s1"></td>
+            <td class="s1"></td>
+            <td class="s1"></td>
+            <td class="s1"></td>
+          </tr>
+          <tr style="height: 4px">
+            <th
+              id="22770290R5"
+              style="height: 4px"
+              class="row-headers-background"
+            >
+              <div class="row-header-wrapper" style="line-height: 4px">6</div>
+            </th>
+            <td class="s0"></td>
+            <td class="s8" dir="ltr"></td>
+            <td class="s9"></td>
+            <td class="s9"></td>
+            <td class="s9"></td>
+            <td class="s8"></td>
+            <td class="s8"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+            <td class="s0"></td>
+          </tr>
+
+          <%= @courses.join("") %>
+
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
