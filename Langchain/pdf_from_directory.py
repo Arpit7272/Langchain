@@ -49,7 +49,7 @@ class ImageLoader(BaseLoader):
 #-----------------------Document Analysis one after other in directory -----------------------------
 os.environ["OPENAI_API_KEY"] = key
 llm = OpenAI(temperature = 0,model_name = 'text-davinci-003')
-directory =  "/Users/arpit/Python/OpenAI/utilities/Langchain/transcript"
+directory =  "./Langchain/fileloader"
 file_list = os.listdir(directory)
 for file_name in file_list:
     file_path = os.path.join(directory, file_name)
