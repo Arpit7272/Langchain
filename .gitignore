@@ -1,6 +1,6 @@
 # Ignore below files
 
-/.chroma/*
+*/.chroma/*
 *.pyc
 *.DS_Store
 config.py
