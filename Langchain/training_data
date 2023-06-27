@@ -1,0 +1,14 @@
+1. Authority Name in one word --> to check Provider Name
+2. Convert data into tabular form --> to get the fields detail
+
+3. 
+I will be providing data in a string and wanted the below values.
+1. Provider Name which is usually an organization name that issues the certificate or an authoritative name.
+2. Issue date: Which is the date when the certificate has been issued.
+3. Credits Type: Type of Credit
+4. Title: It's the topic about which the certificate is issued, or the title of the certificate, if multiple separate them with new line
+5. Total Credits: The sum of all the credits present in the certificate in digits.
+6. All credits: It should display the credits type and its value, if multiple separate them with new line
+7.  Specialisation: It's the specialty that is mentioned in the certificate like Dermatology, Radiology.
+Also if you don't find the answer for any of them, just print N/A or are not sure more than 70% leave that field blank.
+
